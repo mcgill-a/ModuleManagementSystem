@@ -1,0 +1,29 @@
+﻿<Window x:Class="Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="448.35" Width="506">
+    <Grid>
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="142,75,0,0" x:Name="txtFirstName" VerticalAlignment="Top" Width="120" TabIndex="101" />
+        <TextBox x:Name="txtSurname" HorizontalAlignment="Left" Height="23" Margin="142,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TabIndex="102"/>
+        <TextBox x:Name="txtCoursework" HorizontalAlignment="Left" Height="23" Margin="142,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TabIndex="103"/>
+        <TextBox x:Name="txtExam" HorizontalAlignment="Left" Height="23" Margin="142,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TabIndex="104"/>
+        <Label x:Name="lblFirstName" Content="First Name" HorizontalAlignment="Left" Margin="70,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblSurname" Content="Surname" HorizontalAlignment="Left" Margin="80,116,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCourseworkMark" Content="Coursework Mark" HorizontalAlignment="Left" Margin="34,160,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblExamMark" Content="Exam Mark" HorizontalAlignment="Left" Margin="69,206,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDOB" Content="Date Of Birth" HorizontalAlignment="Left" Margin="58,253,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="13,300,0,0" VerticalAlignment="Top" Width="75" Click="btnAdd_Click" TabIndex="200"/>
+        <Button x:Name="btnFind" Content="Find" HorizontalAlignment="Left" Margin="399,340,0,0" VerticalAlignment="Top" Width="75" Click="btnFind_Click" TabIndex="206" Height="23"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="399,368,0,0" VerticalAlignment="Top" Width="75" Click="btnDelete_Click" TabIndex="207"/>
+        <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="109,300,0,0" VerticalAlignment="Top" Width="75" Click="btnClear_Click" TabIndex="201"/>
+        <ListBox x:Name="lstEnrolled" HorizontalAlignment="Left" Height="205" Margin="285,74,0,0" VerticalAlignment="Top" Width="143" SelectionChanged="lstEnrolled_SelectionChanged"/>
+        <Label x:Name="lblEnrolled" Content="Enrolled Students" Margin="285,48,0,0" VerticalAlignment="Top" Width="143" HorizontalAlignment="Left" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="btnListAll" Content="List All" HorizontalAlignment="Left" Margin="206,300,0,0" VerticalAlignment="Top" Width="75" Click="btnListAll_Click" TabIndex="202"/>
+        <Button x:Name="btnAutoCreate" Content="Auto Create" HorizontalAlignment="Left" Margin="303,300,0,0" VerticalAlignment="Top" Width="75" Click="btnAutoCreate_Click" TabIndex="203"/>
+        <DatePicker x:Name="dPicker" HorizontalAlignment="Left" Margin="142,255,0,0" VerticalAlignment="Top" Width="120" TabIndex="105"/>
+        <Label x:Name="lblTitle" Content="Module Management System" HorizontalAlignment="Left" VerticalAlignment="Top" Height="52" Width="489" HorizontalContentAlignment="Center" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="399,300,0,0" VerticalAlignment="Top" Width="75" Click="btnExit_Click" TabIndex="204"/>
+        <Label x:Name="lblEnterMatric" Content="Student Matric Number:" HorizontalAlignment="Left" Margin="91,351,0,0" VerticalAlignment="Top" Width="162" HorizontalContentAlignment="Right"/>
+        <TextBox x:Name="txtEnterMatric" HorizontalAlignment="Left" Height="23" Margin="258,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Background="#FFF9F9F9" TabIndex="205"/>
+    </Grid>
+</Window>
